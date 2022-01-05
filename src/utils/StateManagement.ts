@@ -67,8 +67,6 @@ export const buildAlbumHierarchy = (albums: Album[]) => {
     }
   };
 
-  console.log(albums)
-
   const hierarchy = albums.filter((a) => a.parentId == '').map((a) => build(a));
 
   return hierarchy;
